@@ -25,5 +25,7 @@ BIT-CONSULTING/
     └── ubicacion.html
 ```
 
+![Mapa Consultora](mapa_consultora.png)
+
 ## Integrantes
 -- 
