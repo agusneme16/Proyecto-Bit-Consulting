@@ -1,340 +1,239 @@
-/* Estilos Generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ESTILO BIT CONSULTING comentado*/
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
-}
 
-/* Header y Navegación */
-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
+/* Reset global de márgenes, padding y caja */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
 
-header nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: opacity 0.3s;
-}
 
-header nav a:hover {
-  opacity: 0.8;
-}
+/* ---------------------INICIO INDEX--------------------- */
 
-/* Main Content */
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
 
-main h2 {
-  font-size: 2rem;
-  color: #667eea;
-  margin-bottom: 0.5rem;
-}
 
-.intro {
-  font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 2rem;
-}
+/* Estilos del body: fuente, fondo y color de texto */
+body { font-family: 'Arial', 'Helvetica', sans-serif; background-color: #f4f7fb; color: #1a1a2e; }
+/* Encabezado: barra superior con logo y navegación */
+header { background-color: #1a2e4a; padding: 15px 40px; }
+/* Título/logo del header alineado a la izquierda */
+header h1 { color: #fff; font-size: 1.6rem; float: left; }
+/* Palabra destacada en el logo con color de acento */
+header h1 span { color: #00c2a8; }
+/* Navegación alineada a la derecha */
+nav { float: right; }
+/* Lista de navegación sin puntos */
+nav ul { list-style: none; }
+/* Items de navegación en línea horizontal */
+nav ul li { display: inline; margin-left: 10px; }
+/* Enlaces del menú en color blanco */
+nav ul li a { text-decoration: none; color: #fff; font-size: 0.95rem; padding: 8px 16px; }
+/* Sección hero: banner principal con mensaje destacado */
+.hero { background-color: #1a2e4a; color: #fff; padding: 80px 40px; text-align: center; }
+/* Título principal del hero grande y centrado */
+.hero h2 { font-size: 2.8rem; margin-bottom: 16px; }
+/* Palabra destacada en el título con color de acento */
+.hero h2 em { color: #00c2a8; font-style: normal; }
+/* Párrafo descriptivo con ancho limitado */
+.hero p { font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px; color: #c5d5e8; }
+/* Contenedor de botones centrados */
+.hero-botones { text-align: center; }
+/* Botón principal con fondo de color de acento */
+.btn-primario { background-color: #00c2a8; color: #1a2e4a; padding: 12px 28px; text-decoration: none; font-size: 1rem; display: inline-block; margin-right: 16px; }
+/* Botón secundario transparente con borde blanco */
+.btn-secundario { background-color: transparent; color: #fff; padding: 12px 28px; text-decoration: none; border: 2px solid #fff; font-size: 1rem; display: inline-block; }
 
-/* Ubicación Container */
-.ubicacion-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
 
-/* Sección del Mapa */
-.mapa-section {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
-.mapa-section h3 {
-  color: #667eea;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
+/* Estadísticas: números destacados bajo el hero */
+.hero-stats { text-align: center; margin-top: 50px; }
+/* Cada estadística en bloque inline */
+.stat { display: inline-block; margin: 0 20px; text-align: center; }
+/* Número grande en color de acento */
+.stat-numero { font-size: 2.2rem; color: #00c2a8; }
+/* Texto descriptivo de la estadística */
+.stat-texto { font-size: 0.9rem; color: #c5d5e8; }
 
-.mapa-section iframe {
-  border-radius: 8px;
-  display: block;
-}
 
-/* Sección de Información */
-.info-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
 
-.info-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition:
-    transform 0.3s,
-    box-shadow 0.3s;
-}
+/* Secciones: contenedores principales con padding */
+.seccion { padding: 60px 40px; }
+/* Título de sección grande y centrado */
+.seccion-titulo { font-size: 2rem; text-align: center; margin-bottom: 10px; color: #1a2e4a; }
+/* Subtítulo de sección en gris */
+.seccion-subtitulo { text-align: center; color: #555; font-size: 1rem; margin-bottom: 40px; }
 
-.info-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
 
-.info-card h3 {
-  color: #667eea;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
 
-.info-card p {
-  margin: 0.5rem 0;
-  color: #555;
-}
+/* Tarjetas: cajas de contenido cuadrado (280x280px) */
+.tarjetas { text-align: center; }
+/* Tarjeta individual con flexbox para centrado */
+.tarjeta { background-color: #fff; padding: 30px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 12px 24px; vertical-align: top; min-height: 280px; }
+/* Número en la tarjeta en color de acento */
+.tarjeta-numero { font-size: 2rem; color: #00c2a8; margin-bottom: 10px; }
+/* Título de la tarjeta */
+.tarjeta h3 { font-size: 1.2rem; margin-bottom: 10px; color: #1a2e4a; }
+/* Texto descriptivo en la tarjeta */
+.tarjeta p { font-size: 0.95rem; color: #555; line-height: 1.6; }
+/* Enlaces dentro de tarjetas en azul */
+.tarjeta a { display: inline-block; margin-top: 16px; color: #4a90d9; text-decoration: none; font-size: 0.95rem; }
 
-.info-card a {
-  color: #667eea;
-  text-decoration: none;
-  font-weight: 500;
-}
 
-.info-card a:hover {
-  text-decoration: underline;
-}
 
-/* Sección de Transporte */
-.transporte-section {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+/* Sección azul oscura: fondo oscuro con contenido destacado */
+.seccion-azul { background-color: #1a2e4a; padding: 60px 40px; }
+/* Títulos blancos en sección azul */
+.seccion-azul .seccion-titulo { color: #fff; }
+/* Subtítulos en tono claro en sección azul */
+.seccion-azul .seccion-subtitulo { color: #c5d5e8; }
+/* Contenedor de cajas de razones centradas */
+.razones { text-align: center; }
+/* Razones: cajas azul más claro en grid 280x280px */
+.razon { background-color: #2d5282; padding: 30px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 12px 24px; vertical-align: top; min-height: 280px; }
+/* Títulos de razones en blanco */
+.razon h3 { color: #fff; font-size: 1.1rem; margin-bottom: 10px; }
+/* Texto de razones en color claro */
+.razon p { color: #c5d5e8; font-size: 0.9rem; line-height: 1.6; }
 
-.transporte-section h3 {
-  color: #667eea;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
 
-.transporte-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
 
-.transporte-card {
-  background: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid #667eea;
-}
+/* Hero de página interna: banner pequeño para páginas secundarias */
+.page-hero { background-color: #1a2e4a; color: #fff; padding: 50px 40px; text-align: center; }
+/* Título de página interna más pequeño que el del home */
+.page-hero h2 { font-size: 2.2rem; margin-bottom: 10px; }
+/* Descripción bajo el título en color claro */
+.page-hero p { color: #c5d5e8; font-size: 1rem; max-width: 550px; margin: 0 auto; }
 
-.transporte-card h4 {
-  color: #667eea;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
 
-.transporte-card ul {
-  list-style: none;
-}
 
-.transporte-card li {
-  margin: 0.5rem 0;
-  color: #555;
-  padding-left: 1rem;
-}
+/* ---------------------FIN INDEX--------------------- */
 
-/* Sección de Indicaciones */
-.indicaciones-section {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
-.indicaciones-section h3 {
-  color: #667eea;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
 
-.indicaciones-list {
-  padding-left: 2rem;
-  color: #555;
-}
+/* SERVICIOS: lista de ofertas principales en grid 280x280px */
+.servicios-lista { max-width: 1000px; margin: 0 auto; text-align: center; }
+/* Tarjeta de servicio con número y descripción */
+.servicio { background-color: #fff; padding: 24px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 12px 24px; vertical-align: top; min-height: 280px; }
+/* Número del servicio en color de acento */
+.servicio-numero { font-size: 2rem; color: #00c2a8; margin-bottom: 12px; }
+/* Nombre del servicio */
+.servicio h3 { font-size: 1.15rem; color: #1a2e4a; margin-bottom: 6px; }
+/* Descripción del servicio */
+.servicio p { font-size: 0.95rem; color: #555; line-height: 1.6; }
 
-.indicaciones-list li {
-  margin: 1rem 0;
-  line-height: 1.8;
-}
 
-.indicaciones-list li strong {
-  color: #667eea;
-}
 
-/* Sección de Estacionamiento */
-.estacionamiento-section {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+/* Proceso: pasos para ejecutar un servicio en grid más compacto */
+.proceso { text-align: center; margin-top: 40px; }
+/* Cada paso del proceso más compacto */
+.paso { background-color: #fff; padding: 16px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 12px 24px; vertical-align: top; min-height: 200px; }
+/* Número del paso en color de acento */
+.paso-numero { font-size: 1.5rem; color: #00c2a8; margin-bottom: 8px; }
+/* Título del paso */
+.paso h4 { font-size: 1rem; color: #1a2e4a; margin-bottom: 6px; }
+/* Descripción del paso */
+.paso p { font-size: 0.85rem; color: #555; line-height: 1.5; }
 
-.estacionamiento-section h3 {
-  color: #667eea;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
 
-.estacionamiento-info ul {
-  padding-left: 1.5rem;
-  color: #555;
-}
 
-.estacionamiento-info li {
-  margin: 0.7rem 0;
-}
+/* NOSOTROS: introducción y valores de la empresa */
+.nosotros-intro { max-width: 700px; margin: 0 auto 40px; text-align: center; }
+/* Texto introductorio de la sección Nosotros */
+.nosotros-intro p { color: #555; font-size: 1rem; line-height: 1.7; }
+/* Contenedor de lista de valores centrado con flexbox */
+.valores-lista { text-align: center; margin-top: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+/* Badge de cada valor empresarial centrado */
+.valor { background-color: #1a2e4a; color: #fff; padding: 10px 22px; display: inline-flex; margin: 0; font-size: 0.95rem; align-items: center; justify-content: center; }
 
-.estacionamiento-info p {
-  color: #667eea;
-  font-weight: 600;
-  margin-top: 1.5rem;
-  margin-bottom: 0.7rem;
-}
 
-.estacionamiento-info p:first-child {
-  margin-top: 0;
-}
 
-/* Sección de Cita */
-.cita-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 2.5rem;
-  border-radius: 10px;
-  text-align: center;
-}
+/* Equipo: sección con miembros del equipo */
+.equipo { padding: 60px 40px; background-color: #fff; }
+/* Grid de integrantes centrado */
+.equipo-grid { text-align: center; margin-top: 30px; }
+/* Tarjeta de integrante con foto y datos 280x280px */
+.integrante { background-color: #f4f7fb; padding: 12px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: space-around; margin: 0 12px 24px; vertical-align: top; height: 280px; gap: 8px; }
+/* Foto del integrante redonda y centrada sin estirar ni tocar bordes */
+.integrante img { width: 120px; height: 120px; border: 4px solid #00c2a8; margin: 0; object-fit: cover; object-position: center; display: block; flex-shrink: 0; }
+/* Enlace de la foto sin decoración */
+.integrante a { text-decoration: none; margin: 0; padding: 0; display: flex; justify-content: center; width: 100%; }
+/* Nombre del integrante centrado sin espacios extras */
+.integrante h3 { font-size: 1rem; color: #1a2e4a; margin: 0; }
+/* Puesto/rol del integrante con tamaño pequeño */
+.integrante p { font-size: 0.75rem; color: #555; line-height: 1.3; margin: 0; }
 
-.cita-section h3 {
-  color: white;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
 
-.cita-section p {
-  margin-bottom: 1.5rem;
-  font-size: 1.05rem;
-}
 
-.cita-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+/* CONTACTO: grid con información de contacto e formulario */
+.contacto-grid { max-width: 1200px; margin: 0 auto; text-align: center; }
+/* Sección de información de contacto 280x280px */
+.contacto-info { width: 280px; display: inline-flex; flex-direction: column; align-items: stretch; margin: 0 12px 24px; vertical-align: top; }
+/* Bloque individual de información (teléfono, email, dirección) */
+.info-bloque { background-color: #fff; padding: 24px; margin-bottom: 16px; }
+/* Título del bloque de información */
+.info-bloque h3 { font-size: 1rem; color: #1a2e4a; margin-bottom: 8px; }
+/* Enlaces de contacto en azul */
+.info-bloque a { display: block; color: #4a90d9; text-decoration: none; font-size: 0.95rem; margin-bottom: 4px; }
 
-.btn-primary {
-  display: inline-block;
-  background: white;
-  color: #667eea;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s;
-  border: 2px solid white;
-}
 
-.btn-primary:hover {
-  background: transparent;
-  color: white;
-  border-color: white;
-}
 
-/* Footer */
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
-}
+/* Formulario de contacto: panel con campos de entrada */
+.formulario-panel { background-color: #fff; padding: 30px; width: 460px; display: block; margin: 0 auto 40px; text-align: center; }
+/* Título del formulario */
+.formulario-panel h3 { font-size: 1.3rem; color: #1a2e4a; margin-bottom: 6px; }
+/* Descripción del formulario */
+.formulario-panel p { color: #555; font-size: 0.9rem; margin-bottom: 20px; }
+/* Fila con dos campos lado a lado */
+.fila-dos { margin-bottom: 16px; }
+/* Contenedor de cada campo del formulario */
+.grupo-campo { margin-bottom: 16px; width: 100%; text-align: left; }
+/* Etiqueta del campo */
+.grupo-campo label { font-size: 0.9rem; color: #1a2e4a; margin-bottom: 6px; display: block; }
+/* Inputs, selects y textareas con borde y fondo claro */
+.grupo-campo input, .grupo-campo select, .grupo-campo textarea { padding: 12px 14px; border: 2px solid #d0dcea; font-size: 0.95rem; color: #1a1a2e; background-color: #f4f7fb; width: 100%; box-sizing: border-box; }
+/* Altura de inputs y selects */
+.grupo-campo input, .grupo-campo select { height: 45px; }
+/* Altura de textarea y sin resize */
+.grupo-campo textarea { height: 150px; resize: vertical; }
+/* Botón de envío del formulario */
+.btn-enviar { background-color: #1a2e4a; color: #fff; font-size: 1rem; padding: 12px 28px; border: none; cursor: pointer; width: 100%; margin-top: 6px; }
 
-footer p {
-  margin: 0.5rem 0;
-}
 
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    padding: 1rem;
-  }
 
-  header h1 {
-    font-size: 1.8rem;
-  }
+/* UBICACIÓN: mapa interactivo y información de dirección */
+.mapa-wrap { max-width: 800px; margin: 0 auto 40px; overflow: hidden; }
+/* Mapa incrustado de Google Maps */
+.mapa-wrap iframe { width: 100%; height: 320px; border: none; display: block; }
+/* Contenedor de tarjetas de información de ubicación */
+.ubicacion-info { text-align: center; margin-bottom: 40px; }
+/* Tarjeta de información (dirección, horarios) más compacta */
+.info-card { background-color: #fff; padding: 16px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 12px 24px; vertical-align: top; min-height: 160px; }
+/* Título de la tarjeta de información */
+.info-card h3 { font-size: 1rem; color: #1a2e4a; margin-bottom: 10px; }
+/* Contenido de la tarjeta de información */
+.info-card p { font-size: 0.9rem; color: #555; line-height: 1.7; }
+/* Sección de instrucciones de transporte */
+.transporte-wrap { max-width: 800px; margin: 0 auto; background-color: #fff; padding: 30px; }
+/* Título de la sección de transporte */
+.transporte-wrap h3 { font-size: 1.2rem; color: #1a2e4a; margin-bottom: 16px; }
+/* Lista de opciones de transporte sin puntos */
+.transporte-wrap ul { list-style: none; padding: 0; }
+/* Cada opción de transporte con línea divisora */
+.transporte-wrap ul li { padding: 8px 0; border-bottom: 1px solid #e8eef6; color: #555; font-size: 0.95rem; }
+/* Última opción sin línea divisora */
+.transporte-wrap ul li:last-child { border-bottom: none; }
 
-  header nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 
-  main {
-    padding: 0 1rem;
-  }
 
-  main h2 {
-    font-size: 1.5rem;
-  }
+/* Footer: pie de página con información de contacto */
+footer { background-color: #1a2e4a; color: #fff; text-align: center; padding: 24px 40px; clear: both; }
+/* Nombre de la marca en el footer */
+.footer-brand { font-size: 1.2rem; display: block; margin-bottom: 8px; }
+/* Párrafo con información de contacto */
+footer p { font-size: 0.85rem; color: #c5d5e8; }
+/* Enlaces en el footer con color de acento */
+footer a { color: #00c2a8; text-decoration: none; }
 
-  .info-section {
-    grid-template-columns: 1fr;
-  }
 
-  .transporte-grid {
-    grid-template-columns: 1fr;
-  }
 
-  .mapa-section iframe {
-    height: 300px;
-  }
-
-  .cita-buttons {
-    flex-direction: column;
-  }
-
-  .btn-primary {
-    width: 100%;
-  }
-}
+/* Main: contenedor principal de contenido */
+main { padding: 40px; }
