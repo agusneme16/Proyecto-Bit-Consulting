@@ -1,167 +1,125 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ubicacion</title>
-    <link rel="stylesheet" href="../estilos/estilo.css" />
-  </head>
-  <body>
-    <header>
-      <h1>BIT Consulting</h1>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h2>Nuestra Ubicación</h2>
-      <p class="intro">
-        Visítanos en nuestra oficina principal. ¡Coordina una cita con nosotros!
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubicación — BIT Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos/estilo.css">
 
-      <section class="ubicacion-container">
-        <!-- Sección del Mapa -->
-        <div class="mapa-section">
-          <h3>Ubicación en el Mapa</h3>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.567846284936!2d-58.38159242346943!3d-34.603684271485775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3dd16bdf67%3A0x1234567890abc!2sAv.%20Corrientes%201234%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1234567890"
-            width="100%"
-            height="400"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+</head>
+
+<body class="page-location">
+ 
+  <header>
+    <h1>BIT Consulting</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <div class="page-hero">
+    <div class="section-label"><span></span>Visitanos</div>
+    <h2>Nuestra ubicación</h2>
+    <p>Visitanos en nuestra oficina principal. Coordiná una cita y te atendemos personalmente.</p>
+  </div>
+ 
+  <main class="content">
+ 
+    <!-- Mapa -->
+    <div class="mapa-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.567846284936!2d-58.38159242346943!3d-34.603684271485775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3dd16bdf67%3A0x1234567890abc!2sAv.%20Corrientes%201234%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1234567890"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+ 
+    <!-- Info cards -->
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
-
-        <!-- Sección de Información de Contacto -->
-        <div class="info-section">
-          <div class="info-card">
-            <h3>📍 Dirección</h3>
-            <p><strong>Av. Corrientes 1234</strong></p>
-            <p>Piso 12, Ciudad de Buenos Aires</p>
-            <p>C1043AAZ, Argentina</p>
-          </div>
-
-          <div class="info-card">
-            <h3>📞 Contacto</h3>
-            <p><strong>Teléfono:</strong> 011-1234-5678</p>
-            <p>
-              <strong>WhatsApp:</strong>
-              <a href="https://wa.me/5491112345678" target="_blank"
-                >+54 9 11 1234-5678</a
-              >
-            </p>
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:info@bitconsulting.com">info@consultora.com</a>
-            </p>
-          </div>
-
-          <div class="info-card">
-            <h3>🕐 Horarios de Atención</h3>
-            <p><strong>Lunes a Viernes:</strong> 9:00 AM - 18:00 PM</p>
-            <p><strong>Sábado:</strong> 10:00 AM - 14:00 PM</p>
-            <p><strong>Domingo y Feriados:</strong> Cerrado</p>
-          </div>
+        <h3>Dirección</h3>
+        <p><strong class="address-emphasis">Av. Corrientes 1234</strong></p>
+        <p>Piso 12, Ciudad de Buenos Aires</p>
+        <p>C1043AAZ, Argentina</p>
+      </div>
+ 
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-
-        <!-- Sección de Transporte Público -->
-        <div class="transporte-section">
-          <h3>🚌 Cómo Llegar - Transporte Público</h3>
-          <div class="transporte-grid">
-            <div class="transporte-card">
-              <h4>🚇 Subte</h4>
-              <ul>
-                <li>
-                  <strong>Línea A, B, C:</strong> Estación Carlos Pellegrini
-                  (300m)
-                </li>
-                <li><strong>Línea D:</strong> Estación Tribunales (500m)</li>
-              </ul>
-            </div>
-            <div class="transporte-card">
-              <h4>🚌 Colectivos</h4>
-              <ul>
-                <li><strong>Líneas:</strong> 2, 5, 7, 9, 26, 31, 39</li>
-                <li><strong>Parada:</strong> Corrientes y Reconquista</li>
-              </ul>
-            </div>
-            <div class="transporte-card">
-              <h4>🅿️ Estacionamiento</h4>
-              <ul>
-                <li>
-                  <strong>Estacionamiento:</strong> Disponible en edificio
-                </li>
-                <li><strong>Tarifa:</strong> $50 por hora (clientes)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sección de Indicaciones -->
-        <div class="indicaciones-section">
-          <h3>📋 Indicaciones para Visitarnos</h3>
-          <ol class="indicaciones-list">
-            <li>Ingresa al distribuidor ubicado en planta baja del edificio</li>
-            <li>Dirígete al ascensor y marca el piso 12</li>
-            <li>
-              Al salir del ascensor, nuestro Logo "BIT Consulting" te indicará
-              nuestra oficina
-            </li>
-            <li>Presenta tu cédula de identidad en la recepción</li>
-            <li>Nuestro personal te atenderá inmediatamente</li>
-          </ol>
-        </div>
-
-        <!-- Sección de Estacionamiento -->
-        <div class="estacionamiento-section">
-          <h3>🚗 Información de Estacionamiento</h3>
-          <div class="estacionamiento-info">
-            <p><strong>Nuestro edificio cuenta con:</strong></p>
+        <h3>Horarios</h3>
+        <p>Lunes a Viernes: 9:00 – 18:00</p>
+        <p>Sábado: 10:00 – 14:00</p>
+        <p>Domingo y feriados: Cerrado</p>
+      </div>
+    </div>
+ 
+    <!-- Transporte + Indicaciones -->
+    <div class="two-col">
+ 
+      <div class="panel">
+        <div class="panel-label"><span></span>Cómo llegar</div>
+        <h3>Transporte público</h3>
+        <div class="transporte-grid">
+          <div class="transporte-item">
+            <h4>Subte</h4>
             <ul>
-              <li>Acceso a cochera subterránea</li>
-              <li>Tarifa preferencial para clientes: $50/hora</li>
-              <li>Estacionamiento vigilado 24/7</li>
-              <li>Primera hora gratis para consultas</li>
+              <li><strong>Línea A, B, C:</strong> Carlos Pellegrini (300m)</li>
+              <li><strong>Línea D:</strong> Tribunales (500m)</li>
             </ul>
-            <p><strong>Alternativas cercanas:</strong></p>
+          </div>
+          <div class="transporte-item">
+            <h4>Colectivos</h4>
             <ul>
-              <li>Station Parking - Reconquista 580 (200m)</li>
-              <li>ACI Parking - San Martín 545 (350m)</li>
+              <li><strong>Líneas:</strong> 2, 5, 7, 9, 26, 31, 39</li>
+              <li><strong>Parada:</strong> Corrientes y Reconquista</li>
+            </ul>
+          </div>
+          <div class="estacionamiento">
+            <h4>Estacionamiento</h4>
+            <ul>
+              <li>Cochera subterránea en el edificio</li>
+              <li>Tarifa preferencial: $50/hora</li>
+              <li>Vigilado 24/7 · Primera hora gratis</li>
+              <li>Station Parking – Reconquista 580 (200m)</li>
+              <li>ACI Parking – San Martín 545 (350m)</li>
             </ul>
           </div>
         </div>
-
-        <!-- Sección de Agendar Cita -->
-        <div class="cita-section">
-          <h3>📅 Agenda Tu Cita</h3>
-          <p>
-            Para coordinar una visita, ponte en contacto con nosotros a través
-            de:
-          </p>
-          <div class="cita-buttons">
-            <a href="contacto.html" class="btn-primary"
-              >📧 Formulario de Contacto</a
-            >
-            <a href="tel:011-1234-5678" class="btn-primary">📞 Llamar Ahora</a>
-            <a
-              href="https://wa.me/5491112345678"
-              class="btn-primary"
-              target="_blank"
-              >💬 WhatsApp</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>Contacto: info@consultora.com | Tel: 011-1234-5678</p>
-    </footer>
-  </body>
+      </div>
+ 
+      <div class="panel">
+        <div class="panel-label"><span></span>Al llegar</div>
+        <h3>Indicaciones</h3>
+        <ol class="indicaciones-list">
+          <li>Ingresá al distribuidor en planta baja del edificio.</li>
+          <li>Dirigite al ascensor y marcá el piso 12.</li>
+          <li>El logo de BIT Consulting te indicará la oficina al salir del ascensor.</li>
+          <li>Presentá tu documento en la recepción.</li>
+          <li>Nuestro personal te atenderá de inmediato.</li>
+        </ol>
+      </div>
+ 
+    </div>
+ 
+  </main>
+ 
+  <footer>
+    <span class="footer-brand">BIT Consulting</span>
+    <p><a href="mailto:info@bitconsulting.com">info@bitconsulting.com</a> &nbsp;·&nbsp; Tel: 011-1234-5678</p>
+  </footer>
+ 
+</body>
 </html>
+
+
+

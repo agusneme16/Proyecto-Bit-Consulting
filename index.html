@@ -1,12 +1,16 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
-    <link rel="stylesheet" href="estilos/estilo.css" />
+    <title>BIT Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilo.css">
+
   </head>
-  <body>
+  <body class="page-home">
+
+    <!-- ── Header ─────────────────────────────────────────────── -->
     <header>
       <h1>BIT Consulting</h1>
       <nav>
@@ -15,60 +19,131 @@
           <li><a href="paginas/servicios.html">Servicios</a></li>
           <li><a href="paginas/nosotros.html">Nosotros</a></li>
           <li><a href="paginas/contacto.html">Contacto</a></li>
-          <li><a href="paginas/ubicacion.html">Contacto</a></li>
+          <li><a href="paginas/ubicacion.html">Ubicación</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-        <div class="descripcion">
-            <h2>Transformamos tu negocio con tecnologia</h2>
-            <p>Somos una consultora líder en transformación digital, dedicada a potenciar negocios mediante el desarrollo de software innovador y estrategias tecnológicas a medida.</p>
+
+      <!-- ── Hero ──────────────────────────────────────────────── -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-eyebrow"><span></span>Consultoría tecnológica</div>
+          <h2>Transformamos tu negocio con <em>tecnología</em></h2>
+          <p class="hero-desc">Somos una consultora líder en transformación digital, dedicada a potenciar negocios mediante el desarrollo de software innovador y estrategias tecnológicas a medida.</p>
+          <div class="hero-cta">
+            <a href="paginas/servicios.html" class="btn-primary">
+              Ver servicios
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="paginas/contacto.html" class="btn-secondary">Hablemos</a>
+          </div>
         </div>
 
-        <div class="descripcion">
-            <h2>¿Qué hacemos?</h2>
-            <p>En BIT Consulting combinamos experiencia, tecnología y creatividad para ofrecer soluciones digitales que impulsan el crecimiento de tu empresa. Nos especializamos en desarrollo de software a medida, ciberseguridad y consultoría en la nube.</p>
+        <div class="hero-visual">
+          <div class="hero-grid">
+            <div class="hero-stat">
+              <div class="hero-stat-num">10<span>+</span></div>
+              <div class="hero-stat-lbl">Años de experiencia</div>
+            </div>
+            <div class="hero-stat accent">
+              <div class="hero-stat-num">200<span>+</span></div>
+              <div class="hero-stat-lbl">Proyectos entregados</div>
+            </div>
+            <div class="hero-stat accent">
+              <div class="hero-stat-num">98<span>%</span></div>
+              <div class="hero-stat-lbl">Clientes satisfechos</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">40<span>+</span></div>
+              <div class="hero-stat-lbl">Sectores atendidos</div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="accesos">
-            <div class="tarjeta">
-                <h3>Servicios</h3>
-                <p>Conocé nuestra oferta de valor.</p>
-                <a href="paginas/servicios.html">Ver más</a>
+      <!-- ── ¿Qué hacemos? ──────────────────────────────────────── -->
+      <section class="que-hacemos">
+        <div class="section-inner">
+          <div class="section-header">
+            <div>
+              <div class="section-label"><span></span>Quiénes somos</div>
+              <h2>¿Qué hacemos?</h2>
             </div>
-            <div class="tarjeta">
-                <h3>Nosotros</h3>
-                <p>Conocé a nuestro equipo.</p>
-                <a href="paginas/nosotros.html">Ver más</a>
-            </div>
-            <div class="tarjeta">
-                <h3>Contacto</h3>
-                <p>Hablemos de tu proyecto.</p>
-                <a href="paginas/contacto.html">Ver más</a>
-            </div>
+            <p class="que-hacemos-desc">En BIT Consulting combinamos experiencia, tecnología y creatividad para ofrecer soluciones digitales que impulsan el crecimiento de tu empresa. Nos especializamos en desarrollo de software a medida, ciberseguridad y consultoría en la nube.</p>
+          </div>
         </div>
+      </section>
 
-        <div class="motivos">
-            <h2>¿Por qué elegirnos?</h2>
-            <div class="razones">
-                <div class="razon">
-                    <h3>Experiencia</h3>
-                    <p>Años de experiencia desarrollando soluciones tecnológicas para empresas de distintos sectores.</p>
-                </div>
-                <div class="razon">
-                    <h3>Atención personalizada</h3>
-                    <p>Diseñamos soluciones a medida según las necesidades de tu negocio.</p>
-                </div>
-                <div class="razon">
-                    <h3>Resultados reales</h3>
-                    <p>Nos enfocamos en generar impacto positivo en tu empresa.</p>
-                </div>
+      <!-- ── Accesos ────────────────────────────────────────────── -->
+      <section class="accesos">
+        <div class="section-inner">
+          <div class="section-label"><span></span>Explorá</div>
+          <div class="cards-grid">
+            <div class="tarjeta">
+              <div class="tarjeta-num">01</div>
+              <h3>Servicios</h3>
+              <p>Conocé nuestra oferta de valor en tecnología, consultoría y seguridad digital.</p>
+              <a href="paginas/servicios.html">Ver servicios</a>
             </div>
+            <div class="tarjeta">
+              <div class="tarjeta-num">02</div>
+              <h3>Nosotros</h3>
+              <p>Conocé al equipo detrás de cada proyecto y nuestra trayectoria profesional.</p>
+              <a href="paginas/nosotros.html">Ver equipo</a>
+            </div>
+            <div class="tarjeta">
+              <div class="tarjeta-num">03</div>
+              <h3>Contacto</h3>
+              <p>Hablemos de tu proyecto. Estamos disponibles para escuchar tus necesidades.</p>
+              <a href="paginas/contacto.html">Contactanos</a>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- ── ¿Por qué elegirnos? ────────────────────────────────── -->
+      <section class="motivos">
+        <div class="section-inner">
+          <div class="section-label"><span></span>Nuestro diferencial</div>
+          <h2>¿Por qué elegirnos?</h2>
+          <div class="razones">
+            <div class="razon">
+              <div class="razon-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3>Experiencia comprobada</h3>
+              <p>Años de experiencia desarrollando soluciones tecnológicas para empresas de distintos sectores.</p>
+            </div>
+            <div class="razon">
+              <div class="razon-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+              </div>
+              <h3>Atención personalizada</h3>
+              <p>Diseñamos soluciones a medida según las necesidades concretas de tu negocio.</p>
+            </div>
+            <div class="razon">
+              <div class="razon-icon">
+                <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+              <h3>Resultados reales</h3>
+              <p>Nos enfocamos en generar impacto positivo y medible en los procesos de tu empresa.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
+    <!-- ── Footer ──────────────────────────────────────────────── -->
     <footer>
-        <p>Contacto: info@bitconsulting.com | Tel: 011-1234-5678</p>
+      <span class="footer-brand">BIT Consulting</span>
+      <p><a href="mailto:info@bitconsulting.com">info@bitconsulting.com</a> &nbsp;·&nbsp; Tel: 011-1234-5678</p>
     </footer>
+
   </body>
 </html>
+
+
+
