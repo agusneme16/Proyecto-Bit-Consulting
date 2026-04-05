@@ -1,29 +1,141 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Nosotros — BIT Consulting</title>
+
     <link rel="stylesheet" href="../estilos/estilo.css">
 </head>
 <body>
+
     <header>
-        <h1>BIT Consulting</h1>
-        <nav>
+        <h1>BIT <span>Consulting</span></h1>
+        <button class="hamburguesa" id="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <div class="page-hero">
         <h2>Nosotros</h2>
-        <p>Conoce a cada integrante de nuestro equipo!</p>
+        <p>Somos una consultora especializada en desarrollo de software, integración de sistemas y transformación digital.</p>
+    </div>
+
+    <main>
+        <section class="seccion">
+            <h2 class="seccion-titulo">Quiénes somos</h2>
+
+            <div class="nosotros-intro">
+                <p>Ayudamos a las organizaciones a mejorar su eficiencia mediante soluciones tecnológicas confiables, escalables y centradas en el negocio. Nuestro objetivo es ser el socio tecnológico de referencia para empresas que quieren innovar y crecer.</p>
+            </div>
+
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Misión</h3>
+                    <p>Ayudar a las organizaciones a mejorar su eficiencia mediante soluciones tecnológicas confiables y centradas en el negocio.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Visión</h3>
+                    <p>Ser un socio tecnológico de referencia para empresas que buscan innovar y crecer a través del software.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Valores</h3>
+                    <div class="valores-lista">
+                        <span class="valor">Innovación</span>
+                        <span class="valor">Compromiso</span>
+                        <span class="valor">Calidad</span>
+                        <span class="valor">Cliente</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="equipo">
+            <h2 class="seccion-titulo">Equipo profesional</h2>
+            <p class="seccion-subtitulo">¡Conocé a cada integrante de nuestro equipo!</p>
+
+            <div class="equipo-grid">
+
+                <div class="integrante">
+                    <a href="https://fdutto.github.io/proyecto20_03/">
+                        <img src="../img/integrantes/dutto_federico.jpeg" alt="Dutto, Federico Nicolás">
+                    </a>
+                    <h3>Dutto, Federico Nicolás</h3>
+                    <p>32 años, Buenos Aires. Analista Programador Mainframe, mantenimiento de aplicaciones sobre IBM z/OS. Estudiante de Licenciatura en Tecnologías de la Información en UADE.</p>
+                </div>
+
+                <div class="integrante">
+                    <a href="https://enriquezleandrouade.github.io/DDW-Proyecto-1/index.html">
+                        <img src="../img/integrantes/enriquez_leandro.jpeg" alt="Enriquez, Leandro Ezequiel">
+                    </a>
+                    <h3>Enriquez, Leandro Ezequiel</h3>
+                    <p>32 años, Misiones. Arquitecto y técnico en programación. Trabaja remotamente para empresas de Estados Unidos. Cursa la Licenciatura en Sistemas en UADE.</p>
+                </div>
+
+                <div class="integrante">
+                    <a href="https://ticimontenegro.github.io/Proyecto1viernes/">
+                        <img src="../img/integrantes/montenegro_ticiana.jpeg" alt="Montenegro, Ticiana Rocío">
+                    </a>
+                    <h3>Montenegro, Ticiana Rocío</h3>
+                    <p>20 años, Neuquén. Técnica Química y estudiante de la Licenciatura en Gestión de Tecnología de la Información en UADE.</p>
+                </div>
+
+                <div class="integrante">
+                    <a href="https://agusneme16.github.io/Desarrollo-Web/">
+                        <img src="../img/integrantes/neme_agustin.jpeg" alt="Neme, Agustín Nadim">
+                    </a>
+                    <h3>Neme, Agustín Nadim</h3>
+                    <p>22 años, Buenos Aires. Analista de Precios en la industria farmacéutica y estudiante de Gestión de Tecnologías de la Información en UADE.</p>
+                </div>
+
+                <div class="integrante">
+                    <a href="https://erikcpurtscher.github.io/Proyecto1/">
+                        <img src="../img/integrantes/purtscher_eric.jpeg" alt="Purtscher, Erik Cristopher">
+                    </a>
+                    <h3>Purtscher, Erik Cristopher</h3>
+                    <p>31 años, Chubut. Técnico Electromecánico y Analista Funcional IT. Cursa la Licenciatura en Gestión de Tecnología de la Información en UADE.</p>
+                </div>
+
+            </div>
+        </div>
+
     </main>
+
     <footer>
-        <p>Contacto: info@consultora.com | Tel: 011-1234-5678</p>
+        <span class="footer-brand">BIT Consulting</span>
+        <p><a href="mailto:info@bitconsulting.com">info@bitconsulting.com</a> · Tel: 011-1234-5678</p>
     </footer>
+
+    <script>
+        // Obtener el botón hamburguesa y el menú
+        var hamburguesa = document.getElementById('hamburguesa');
+        var menu = document.getElementById('menu');
+        
+        // Cuando se hace click en el hamburguesa
+        hamburguesa.onclick = function() {
+            menu.classList.toggle('abierto');
+            // Si el menú está oculto, mostrarlo
+            if (menu.style.display == 'none' || menu.style.display == '') {
+                menu.style.display = 'block';
+            } 
+            // Si el menú está visible, ocultarlo
+            else {
+                menu.style.display = 'none';
+            }
+        };
+    </script>
+
 </body>
 </html>
+
+

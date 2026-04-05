@@ -1,34 +1,118 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto — BIT Consulting</title>
     <link rel="stylesheet" href="../estilos/estilo.css">
 </head>
 <body>
+
     <header>
-        <h1>BIT Consulting</h1>
-        <nav>
+        <h1>BIT <span>Consulting</span></h1>
+        <button class="hamburguesa" id="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Contacto</h2>
-        <p>Completa el formulario y contactanos!</p>
-        <a href="formulario.html">Formulario</a>
 
-        <h2>Ubicacion</h2>
-        <p>Queres venir a conocernos?</p>
-        <a href="ubicacion.html">Ubicacion</a>
+    <div class="page-hero">
+        <h2>Hablemos de tu proyecto</h2>
+        <p>Completá el formulario o contactanos directamente. Te respondemos en menos de 24 horas.</p>
+    </div>
+
+    <main>
+        <section class="seccion">
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <div class="info-bloque">
+                        <h3>Teléfono</h3>
+                        <a href="tel:01112345678">011-1234-5678</a>
+                        <a href="https://wa.me/5491112345678" target="_blank">+54 9 11 1234-5678 (WhatsApp)</a>
+                    </div>
+                    <div class="info-bloque">
+                        <h3>Email</h3>
+                        <a href="mailto:info@bitconsulting.com">info@bitconsulting.com</a>
+                    </div>
+                    <div class="info-bloque">
+                        <h3>Oficina</h3>
+                        <a href="ubicacion.html">Ver ubicación →</a>
+                    </div>
+                </div>
+                <div class="formulario-panel">
+                    <h3>Envianos un mensaje</h3>
+                    <p>Te respondemos a la brevedad.</p>
+                    <form action="#" method="post">
+                        <div class="fila-dos">
+                            <div class="grupo-campo">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="grupo-campo">
+                                <label for="empresa">Empresa</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Tu empresa">
+                            </div>
+                        </div>
+                        <div class="grupo-campo">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="grupo-campo">
+                            <label for="servicio">Servicio de interés</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">Seleccioná una opción</option>
+                                <option>Desarrollo de software a medida</option>
+                                <option>Ciberseguridad</option>
+                                <option>Consultoría en la nube</option>
+                                <option>Transformación digital</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="grupo-campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Contanos sobre tu proyecto..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>Contacto: info@consultora.com | Tel: 011-1234-5678</p>
+        <span class="footer-brand">BIT Consulting</span>
+        <p><a href="mailto:info@bitconsulting.com">info@bitconsulting.com</a> · Tel: 011-1234-5678</p>
     </footer>
+
+    <script>
+        // Obtener el botón hamburguesa y el menú
+        var hamburguesa = document.getElementById('hamburguesa');
+        var menu = document.getElementById('menu');
+        
+        // Cuando se hace click en el hamburguesa
+        hamburguesa.onclick = function() {
+            menu.classList.toggle('abierto');
+            // Si el menú está oculto, mostrarlo
+            if (menu.style.display == 'none' || menu.style.display == '') {
+                menu.style.display = 'block';
+            } 
+            // Si el menú está visible, ocultarlo
+            else {
+                menu.style.display = 'none';
+            }
+        };
+    </script>
+
 </body>
 </html>
+

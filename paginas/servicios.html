@@ -1,44 +1,120 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+    <title>Servicios — BIT Consulting</title>
     <link rel="stylesheet" href="../estilos/estilo.css">
 </head>
 <body>
+
     <header>
-        <h1>BIT Consulting</h1>
-        <nav>
+        <h1>BIT <span>Consulting</span></h1>
+        <button class="hamburguesa" id="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="page-hero">
+        <h2>Nuestros servicios</h2>
+        <p>Soluciones tecnológicas diseñadas para impulsar el crecimiento de tu empresa con foco en resultados reales.</p>
+    </div>
+
     <main>
-        <h2>Servicios</h2>
-        <section class="servicio">
-            <h3>Desarrollo de Software a Medida</h3>
-            <img src="../img/servicios/desarrollo.png" alt="Desarrollo de Software a Medida">
-            <p>Creación de aplicaciones de alto rendimiento diseñadas para resolver necesidades específicas de cada empresa, optimizando sus procesos internos.</p>
+
+        <section class="seccion">
+            <h2 class="seccion-titulo">Qué ofrecemos</h2>
+            <p class="seccion-subtitulo">Tres áreas principales con enfoque en calidad y resultados.</p>
+
+            <div class="servicios-lista">
+                <div class="servicio">
+                    <div class="servicio-numero">01</div>
+                    <div>
+                        <h3>Desarrollo de Software a Medida</h3>
+                        <p>Creación de aplicaciones de alto rendimiento diseñadas para resolver necesidades específicas de cada empresa, optimizando sus procesos internos.</p>
+                    </div>
+                </div>
+                <div class="servicio">
+                    <div class="servicio-numero">02</div>
+                    <div>
+                        <h3>Ciberseguridad y Protección de Datos</h3>
+                        <p>Implementación de protocolos de seguridad avanzados para proteger la información crítica de los clientes contra amenazas digitales.</p>
+                    </div>
+                </div>
+                <div class="servicio">
+                    <div class="servicio-numero">03</div>
+                    <div>
+                        <h3>Consultoría e Infraestructura en la Nube</h3>
+                        <p>Migración y gestión de servicios hacia plataformas Cloud para mejorar la agilidad y disponibilidad del negocio en cualquier lugar.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="servicio">
-            <h3>Ciberseguridad y Protección de Datos</h3>
-            <img src="../img/servicios/ciberseguridad.png" alt="Ciberseguridad y Protección de Datos">
-            <p>Implementación de protocolos de seguridad avanzados para proteger la información crítica de los clientes contra amenazas digitales.</p>
+
+        <section class="seccion-azul">
+            <h2 class="seccion-titulo">Cómo trabajamos</h2>
+            <p class="seccion-subtitulo">Un proceso claro y ordenado en cuatro etapas.</p>
+            <div class="proceso">
+                <div class="paso">
+                    <div class="paso-numero">01</div>
+                    <h4>Diagnóstico</h4>
+                    <p>Analizamos tus procesos y objetivos para diseñar la solución adecuada.</p>
+                </div>
+                <div class="paso">
+                    <div class="paso-numero">02</div>
+                    <h4>Propuesta</h4>
+                    <p>Presentamos un plan con tecnologías, plazos y métricas de éxito.</p>
+                </div>
+                <div class="paso">
+                    <div class="paso-numero">03</div>
+                    <h4>Ejecución</h4>
+                    <p>Nuestro equipo trabaja en ciclos con revisiones continuas con el cliente.</p>
+                </div>
+                <div class="paso">
+                    <div class="paso-numero">04</div>
+                    <h4>Soporte</h4>
+                    <p>Brindamos soporte continuo y evolución del sistema según las necesidades.</p>
+                </div>
+            </div>
         </section>
-        <section class="servicio">
-            <h3>Consultoría e Infraestructura en la Nube</h3>
-            <img src="../img/servicios/nube.png" alt="Consultoría e Infraestructura en la Nube">
-            <p>Migración y gestión de servicios hacia plataformas Cloud para mejorar la agilidad y disponibilidad del negocio en cualquier lugar.</p>
-        </section>
-        <a href="proyectos.html">Nuestros proyectos</a>
+
     </main>
+
     <footer>
-        <p>Contacto: info@consultora.com | Tel: 011-1234-5678</p>
+        <span class="footer-brand">BIT Consulting</span>
+        <p><a href="mailto:info@bitconsulting.com">info@bitconsulting.com</a> · Tel: 011-1234-5678</p>
     </footer>
+
+    <script>
+        // Obtener el botón hamburguesa y el menú
+        var hamburguesa = document.getElementById('hamburguesa');
+        var menu = document.getElementById('menu');
+        
+        // Cuando se hace click en el hamburguesa
+        hamburguesa.onclick = function() {
+            menu.classList.toggle('abierto');
+            // Si el menú está oculto, mostrarlo
+            if (menu.style.display == 'none' || menu.style.display == '') {
+                menu.style.display = 'block';
+            } 
+            // Si el menú está visible, ocultarlo
+            else {
+                menu.style.display = 'none';
+            }
+        };
+    </script>
+
 </body>
 </html>
+
