@@ -2,238 +2,308 @@
 
 
 
-/* Reset global de márgenes, padding y caja */
+/* Reset global */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-
-
-/* ---------------------INICIO INDEX--------------------- */
-
-
-
-/* Estilos del body: fuente, fondo y color de texto */
 body { font-family: 'Arial', 'Helvetica', sans-serif; background-color: #f4f7fb; color: #1a1a2e; }
-/* Encabezado: barra superior con logo y navegación */
-header { background-color: #1a2e4a; padding: 15px 40px; }
-/* Título/logo del header alineado a la izquierda */
+
+/* HEADER Y NAVEGACIÓN */
+header { background-color: #1a2e4a; padding: 15px 40px; overflow: auto; }
+
 header h1 { color: #fff; font-size: 1.6rem; float: left; }
-/* Palabra destacada en el logo con color de acento */
+
 header h1 span { color: #00c2a8; }
-/* Navegación alineada a la derecha */
-nav { float: right; }
-/* Lista de navegación sin puntos */
-nav ul { list-style: none; }
-/* Items de navegación en línea horizontal */
-nav ul li { display: inline; margin-left: 10px; }
-/* Enlaces del menú en color blanco */
+
+nav { float: right; display: block; }
+
+nav ul { list-style: none; display: inline-flex; }
+
+nav ul li { display: inline-block; margin-left: 10px; }
+
 nav ul li a { text-decoration: none; color: #fff; font-size: 0.95rem; padding: 8px 16px; }
-/* Sección hero: banner principal con mensaje destacado */
+
+/* Botón hamburguesa - no se ve por defecto */
+.hamburguesa { display: none; background: none; border: none; cursor: pointer; padding: 10px; float: right; }
+
+.hamburguesa span { width: 25px; height: 3px; background-color: #fff; display: block; margin: 5px 0; }
+
+/* HERO */
 .hero { background-color: #1a2e4a; color: #fff; padding: 80px 40px; text-align: center; }
-/* Título principal del hero grande y centrado */
+
 .hero h2 { font-size: 2.8rem; margin-bottom: 16px; }
-/* Palabra destacada en el título con color de acento */
+
 .hero h2 em { color: #00c2a8; font-style: normal; }
-/* Párrafo descriptivo con ancho limitado */
+
 .hero p { font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px; color: #c5d5e8; }
-/* Contenedor de botones centrados */
+
 .hero-botones { text-align: center; }
-/* Botón principal con fondo de color de acento */
-.btn-primario { background-color: #00c2a8; color: #1a2e4a; padding: 12px 28px; text-decoration: none; font-size: 1rem; display: inline-block; margin-right: 16px; }
-/* Botón secundario transparente con borde blanco */
-.btn-secundario { background-color: transparent; color: #fff; padding: 12px 28px; text-decoration: none; border: 2px solid #fff; font-size: 1rem; display: inline-block; }
 
+.btn-primario { background-color: #00c2a8; color: #1a2e4a; padding: 12px 28px; text-decoration: none; font-size: 1rem; display: inline-block; margin-right: 16px; margin-bottom: 10px; }
 
+.btn-secundario { background-color: transparent; color: #fff; padding: 12px 28px; text-decoration: none; border: 2px solid #fff; font-size: 1rem; display: inline-block; margin-bottom: 10px; }
 
-/* Estadísticas: números destacados bajo el hero */
 .hero-stats { text-align: center; margin-top: 50px; }
-/* Cada estadística en bloque inline */
+
 .stat { display: inline-block; margin: 0 20px; text-align: center; }
-/* Número grande en color de acento */
+
 .stat-numero { font-size: 2.2rem; color: #00c2a8; }
-/* Texto descriptivo de la estadística */
+
 .stat-texto { font-size: 0.9rem; color: #c5d5e8; }
 
-
-
-/* Secciones: contenedores principales con padding */
+/* SECCIONES */
 .seccion { padding: 60px 40px; }
-/* Título de sección grande y centrado */
+
 .seccion-titulo { font-size: 2rem; text-align: center; margin-bottom: 10px; color: #1a2e4a; }
-/* Subtítulo de sección en gris */
+
 .seccion-subtitulo { text-align: center; color: #555; font-size: 1rem; margin-bottom: 40px; }
 
+/* TARJETAS */
+.tarjetas { text-align: center; align-items: center;}
 
+.tarjeta { background-color: #fff; padding: 30px; width: 280px; text-align: center; display: inline-block; margin: 0 12px 24px; vertical-align: top; height: 240px; }
 
-/* Tarjetas: cajas de contenido cuadrado (280x280px) */
-.tarjetas { text-align: center; }
-/* Tarjeta individual con flexbox para centrado */
-.tarjeta { background-color: #fff; padding: 30px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 12px 24px; vertical-align: top; min-height: 280px; }
-/* Número en la tarjeta en color de acento */
 .tarjeta-numero { font-size: 2rem; color: #00c2a8; margin-bottom: 10px; }
-/* Título de la tarjeta */
+
 .tarjeta h3 { font-size: 1.2rem; margin-bottom: 10px; color: #1a2e4a; }
-/* Texto descriptivo en la tarjeta */
+
 .tarjeta p { font-size: 0.95rem; color: #555; line-height: 1.6; }
-/* Enlaces dentro de tarjetas en azul */
+
 .tarjeta a { display: inline-block; margin-top: 16px; color: #4a90d9; text-decoration: none; font-size: 0.95rem; }
 
-
-
-/* Sección azul oscura: fondo oscuro con contenido destacado */
+/* SECCIÓN AZUL */
 .seccion-azul { background-color: #1a2e4a; padding: 60px 40px; }
-/* Títulos blancos en sección azul */
+
 .seccion-azul .seccion-titulo { color: #fff; }
-/* Subtítulos en tono claro en sección azul */
+
 .seccion-azul .seccion-subtitulo { color: #c5d5e8; }
-/* Contenedor de cajas de razones centradas */
+
 .razones { text-align: center; }
-/* Razones: cajas azul más claro en grid 280x280px */
-.razon { background-color: #2d5282; padding: 30px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 12px 24px; vertical-align: top; min-height: 280px; }
-/* Títulos de razones en blanco */
-.razon h3 { color: #fff; font-size: 1.1rem; margin-bottom: 10px; }
-/* Texto de razones en color claro */
-.razon p { color: #c5d5e8; font-size: 0.9rem; line-height: 1.6; }
 
+.razon { background-color: #2d5282; padding: 30px; width: 280px; text-align: center; display: inline-block; margin: 0 12px 24px; vertical-align: top; height: 180px; }
 
+.razon h3 { color: #fff; font-size: 1.1rem; margin-bottom: 10px; text-align: center;}
 
-/* Hero de página interna: banner pequeño para páginas secundarias */
+.razon p { color: #c5d5e8; font-size: 0.9rem; line-height: 1.6; text-align: center; }
+
+/* PAGE HERO */
 .page-hero { background-color: #1a2e4a; color: #fff; padding: 50px 40px; text-align: center; }
-/* Título de página interna más pequeño que el del home */
+
 .page-hero h2 { font-size: 2.2rem; margin-bottom: 10px; }
-/* Descripción bajo el título en color claro */
+
 .page-hero p { color: #c5d5e8; font-size: 1rem; max-width: 550px; margin: 0 auto; }
 
-
-
-/* ---------------------FIN INDEX--------------------- */
-
-
-
-/* SERVICIOS: lista de ofertas principales en grid 280x280px */
+/* SERVICIOS */
 .servicios-lista { max-width: 1000px; margin: 0 auto; text-align: center; }
-/* Tarjeta de servicio con número y descripción */
-.servicio { background-color: #fff; padding: 24px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 12px 24px; vertical-align: top; min-height: 280px; }
-/* Número del servicio en color de acento */
+
+.servicio { background-color: #fff; padding: 24px; width: 280px; text-align: center; display: inline-block; margin: 0 12px 24px; vertical-align: top; min-height: 280px; }
+
 .servicio-numero { font-size: 2rem; color: #00c2a8; margin-bottom: 12px; }
-/* Nombre del servicio */
+
 .servicio h3 { font-size: 1.15rem; color: #1a2e4a; margin-bottom: 6px; }
-/* Descripción del servicio */
+
 .servicio p { font-size: 0.95rem; color: #555; line-height: 1.6; }
 
-
-
-/* Proceso: pasos para ejecutar un servicio en grid más compacto */
+/* PROCESO */
 .proceso { text-align: center; margin-top: 40px; }
-/* Cada paso del proceso más compacto */
-.paso { background-color: #fff; padding: 16px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 12px 24px; vertical-align: top; min-height: 200px; }
-/* Número del paso en color de acento */
+
+.paso { background-color: #fff; padding: 16px; width: 280px; text-align: center; display: inline-block; margin: 0 12px 24px; vertical-align: top; height: 140px; }
+
 .paso-numero { font-size: 1.5rem; color: #00c2a8; margin-bottom: 8px; }
-/* Título del paso */
+
 .paso h4 { font-size: 1rem; color: #1a2e4a; margin-bottom: 6px; }
-/* Descripción del paso */
+
 .paso p { font-size: 0.85rem; color: #555; line-height: 1.5; }
 
-
-
-/* NOSOTROS: introducción y valores de la empresa */
+/* NOSOTROS */
 .nosotros-intro { max-width: 700px; margin: 0 auto 40px; text-align: center; }
-/* Texto introductorio de la sección Nosotros */
+
 .nosotros-intro p { color: #555; font-size: 1rem; line-height: 1.7; }
-/* Contenedor de lista de valores centrado con flexbox */
-.valores-lista { text-align: center; margin-top: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
-/* Badge de cada valor empresarial centrado */
-.valor { background-color: #1a2e4a; color: #fff; padding: 10px 22px; display: inline-flex; margin: 0; font-size: 0.95rem; align-items: center; justify-content: center; }
 
+.valores-lista { text-align: center; margin-top: 0px; display: inline-block;}
 
+.valor { background-color: #1a2e4a; color: #fff; padding: 10px 22px; display: inline-block; margin: 5px; font-size: 0.95rem; }
 
-/* Equipo: sección con miembros del equipo */
+/* EQUIPO */
 .equipo { padding: 60px 40px; background-color: #fff; }
-/* Grid de integrantes centrado */
+
 .equipo-grid { text-align: center; margin-top: 30px; }
-/* Tarjeta de integrante con foto y datos 280x280px */
-.integrante { background-color: #f4f7fb; padding: 12px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: space-around; margin: 0 12px 24px; vertical-align: top; height: 280px; gap: 8px; }
-/* Foto del integrante redonda y centrada sin estirar ni tocar bordes */
-.integrante img { width: 120px; height: 120px; border: 4px solid #00c2a8; margin: 0; object-fit: cover; object-position: center; display: block; flex-shrink: 0; }
-/* Enlace de la foto sin decoración */
-.integrante a { text-decoration: none; margin: 0; padding: 0; display: flex; justify-content: center; width: 100%; }
-/* Nombre del integrante centrado sin espacios extras */
-.integrante h3 { font-size: 1rem; color: #1a2e4a; margin: 0; }
-/* Puesto/rol del integrante con tamaño pequeño */
+
+.integrante { background-color: #f4f7fb; padding: 12px; width: 280px; text-align: center; display: inline-block; margin: 0 12px 24px; vertical-align: top; height: 235px; }
+
+.integrante img { width: 120px; height: 120px; border: 4px solid #00c2a8; margin: 0 auto 8px; display: block; object-fit: cover; object-position: center; }
+
+.integrante a { text-align: center; text-decoration: none; display: block; width: 120px; height: 120px; margin: 0 auto 8px; }
+
+.integrante h3 { font-size: 1rem; color: #1a2e4a; margin: 8px 0 4px 0; }
+
 .integrante p { font-size: 0.75rem; color: #555; line-height: 1.3; margin: 0; }
 
-
-
-/* CONTACTO: grid con información de contacto e formulario */
+/* CONTACTO */
 .contacto-grid { max-width: 1200px; margin: 0 auto; text-align: center; }
-/* Sección de información de contacto 280x280px */
-.contacto-info { width: 280px; display: inline-flex; flex-direction: column; align-items: stretch; margin: 0 12px 24px; vertical-align: top; }
-/* Bloque individual de información (teléfono, email, dirección) */
+
+.contacto-info { width: 280px; display: inline-block; margin: 0 12px 24px; vertical-align: top; }
+
 .info-bloque { background-color: #fff; padding: 24px; margin-bottom: 16px; }
-/* Título del bloque de información */
+
 .info-bloque h3 { font-size: 1rem; color: #1a2e4a; margin-bottom: 8px; }
-/* Enlaces de contacto en azul */
+
 .info-bloque a { display: block; color: #4a90d9; text-decoration: none; font-size: 0.95rem; margin-bottom: 4px; }
 
-
-
-/* Formulario de contacto: panel con campos de entrada */
+/* FORMULARIO */
 .formulario-panel { background-color: #fff; padding: 30px; width: 460px; display: block; margin: 0 auto 40px; text-align: center; }
-/* Título del formulario */
+
 .formulario-panel h3 { font-size: 1.3rem; color: #1a2e4a; margin-bottom: 6px; }
-/* Descripción del formulario */
+
 .formulario-panel p { color: #555; font-size: 0.9rem; margin-bottom: 20px; }
-/* Fila con dos campos lado a lado */
+
 .fila-dos { margin-bottom: 16px; }
-/* Contenedor de cada campo del formulario */
+
 .grupo-campo { margin-bottom: 16px; width: 100%; text-align: left; }
-/* Etiqueta del campo */
+
 .grupo-campo label { font-size: 0.9rem; color: #1a2e4a; margin-bottom: 6px; display: block; }
-/* Inputs, selects y textareas con borde y fondo claro */
-.grupo-campo input, .grupo-campo select, .grupo-campo textarea { padding: 12px 14px; border: 2px solid #d0dcea; font-size: 0.95rem; color: #1a1a2e; background-color: #f4f7fb; width: 100%; box-sizing: border-box; }
-/* Altura de inputs y selects */
+
+.grupo-campo input, .grupo-campo select, .grupo-campo textarea { padding: 12px 14px; border: 2px solid #d0dcea; font-size: 0.95rem; color: #1a1a2e; background-color: #f4f7fb; width: 100%; }
+
 .grupo-campo input, .grupo-campo select { height: 45px; }
-/* Altura de textarea y sin resize */
+
 .grupo-campo textarea { height: 150px; resize: vertical; }
-/* Botón de envío del formulario */
+
 .btn-enviar { background-color: #1a2e4a; color: #fff; font-size: 1rem; padding: 12px 28px; border: none; cursor: pointer; width: 100%; margin-top: 6px; }
 
-
-
-/* UBICACIÓN: mapa interactivo y información de dirección */
+/* UBICACIÓN */
 .mapa-wrap { max-width: 800px; margin: 0 auto 40px; overflow: hidden; }
-/* Mapa incrustado de Google Maps */
+
 .mapa-wrap iframe { width: 100%; height: 320px; border: none; display: block; }
-/* Contenedor de tarjetas de información de ubicación */
+
 .ubicacion-info { text-align: center; margin-bottom: 40px; }
-/* Tarjeta de información (dirección, horarios) más compacta */
-.info-card { background-color: #fff; padding: 16px; width: 280px; text-align: center; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 12px 24px; vertical-align: top; min-height: 160px; }
-/* Título de la tarjeta de información */
+
+.info-card { background-color: #fff; padding: 16px; width: 280px; text-align: center; display: inline-block; margin: 0 12px 24px; vertical-align: top; min-height: 160px; }
+
 .info-card h3 { font-size: 1rem; color: #1a2e4a; margin-bottom: 10px; }
-/* Contenido de la tarjeta de información */
+
 .info-card p { font-size: 0.9rem; color: #555; line-height: 1.7; }
-/* Sección de instrucciones de transporte */
+
 .transporte-wrap { max-width: 800px; margin: 0 auto; background-color: #fff; padding: 30px; }
-/* Título de la sección de transporte */
+
 .transporte-wrap h3 { font-size: 1.2rem; color: #1a2e4a; margin-bottom: 16px; }
-/* Lista de opciones de transporte sin puntos */
+
 .transporte-wrap ul { list-style: none; padding: 0; }
-/* Cada opción de transporte con línea divisora */
+
 .transporte-wrap ul li { padding: 8px 0; border-bottom: 1px solid #e8eef6; color: #555; font-size: 0.95rem; }
-/* Última opción sin línea divisora */
+
 .transporte-wrap ul li:last-child { border-bottom: none; }
 
+/* FOOTER */
+footer { background-color: #1a2e4a; color: #fff; text-align: center; padding: 24px 40px; }
 
-
-/* Footer: pie de página con información de contacto */
-footer { background-color: #1a2e4a; color: #fff; text-align: center; padding: 24px 40px; clear: both; }
-/* Nombre de la marca en el footer */
 .footer-brand { font-size: 1.2rem; display: block; margin-bottom: 8px; }
-/* Párrafo con información de contacto */
+
 footer p { font-size: 0.85rem; color: #c5d5e8; }
-/* Enlaces en el footer con color de acento */
+
 footer a { color: #00c2a8; text-decoration: none; }
 
 
+/* ========== MEDIA QUERIES PARA RESPONSIVE ========== */
+
+/* Para pantallas pequeñas (celulares) - menos de 768px */
+@media (max-width: 768px) {
+    
+    /* Header más pequeño */
+    header { padding: 10px 15px; overflow: auto; }
+    header h1 { font-size: 1.2rem; float: left; }
+    
+    /* Mostrar hamburguesa */
+    .hamburguesa { display: block; float: right; }
+    
+    /* Menú escondido por defecto */
+    nav { float: none; display: none; width: 100%; background-color: #0f1c2e; padding: 10px 10; clear: both; }
+    
+    nav ul { display: block; }
+    nav ul li { display: block; margin: 0; border-bottom: 1px solid #2d5282; }
+    nav ul li a { display: block; padding: 12px 15px; color: #fff; margin: 0; }
+    
+    /* Hero más pequeño */
+    .hero { padding: 40px 15px; }
+    .hero h2 { font-size: 1.6rem; }
+    .hero p { font-size: 0.95rem; }
+    
+    /* Estadísticas en una columna */
+    .stat { display: block; margin: 15px 0; }
+    
+    /* Secciones */
+    .seccion { padding: 30px 15px; }
+    .seccion-azul { padding: 30px 15px; }
+    
+    /* Tarjetas en ancho completo */
+    .tarjeta { width: 100%; margin: 0 0 20px 0; display: block; }
+    .razon { width: 100%; margin: 0 0 20px 0; display: block; }
+    .servicio { width: 100%; margin: 0 0 20px 0; display: block; }
+    .paso { width: 100%; margin: 0 0 20px 0; display: block; }
+    .integrante { width: 100%; margin: 0 0 20px 0; display: block; }
+    
+    /* Botones */
+    .btn-primario, .btn-secundario { margin: 5px; padding: 10px 20px; font-size: 0.9rem; }
+    
+    /* Page hero pequeño */
+    .page-hero { padding: 30px 15px; }
+    .page-hero h2 { font-size: 1.4rem; }
+    .page-hero p { font-size: 0.9rem; }
+    
+    /* Equipos */
+    .equipo { padding: 30px 15px; }
+    
+    /* Contacto */
+    .contacto-info { width: 100%; margin: 0 0 15px 0; display: block; }
+    .formulario-panel { width: 100%; max-width: 100%; padding: 20px 15px; }
+    
+    /* Ubicación */
+    .mapa-wrap { margin-bottom: 20px; }
+    .mapa-wrap iframe { height: 250px; }
+    .info-card { width: 100%; margin: 0 0 15px 0; display: block; }
+    .transporte-wrap { padding: 20px 15px; }
+    
+    /* Footer */
+    footer { padding: 15px 15px; }
+}
+
+/* Para pantallas muy pequeñas (celulares pequeños) - menos de 480px */
+@media (max-width: 480px) {
+    
+    header { padding: 10px 10px; overflow: auto; }
+    header h1 { font-size: 1rem; float: left; }
+    
+    .hamburguesa { display: block; float: right; }
+    nav { float: none; display: none; width: 100%; background-color: #0f1c2e; }
+    nav ul { display: block; }
+    nav ul li { display: block; border-bottom: 1px solid #2d5282; }
+    nav ul li a { display: block; padding: 12px 10px; }
+    
+    .hero { padding: 30px 10px; }
+    .hero h2 { font-size: 1.4rem; }
+    .hero p { font-size: 0.9rem; }
+    
+    .seccion { padding: 20px 10px; }
+    .seccion-azul { padding: 20px 10px; }
+    
+    .seccion-titulo { font-size: 1.3rem; }
+    .seccion-subtitulo { font-size: 0.85rem; }
+    
+    .stat-numero { font-size: 1.8rem; }
+    .stat-texto { font-size: 0.8rem; }
+    
+    .tarjeta h3, .razon h3, .servicio h3 { font-size: 0.95rem; }
+    .tarjeta p, .razon p, .servicio p { font-size: 0.85rem; }
+    
+    .formulario-panel { padding: 15px 10px; }
+    .formulario-panel h3 { font-size: 1.1rem; }
+    
+    .page-hero h2 { font-size: 1.2rem; }
+    .page-hero p { font-size: 0.85rem; }
+    
+    footer { padding: 10px 10px; font-size: 0.8rem; }
+}
+
+nav.abierto { display: block; }
 
 /* Main: contenedor principal de contenido */
 main { padding: 40px; }
