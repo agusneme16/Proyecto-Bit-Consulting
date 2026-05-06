@@ -1,7 +1,6 @@
 /* ESTILO BIT CONSULTING comentado*/
 
 
-
 /* Reset global */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -22,13 +21,13 @@ nav ul li { display: inline-block; margin-left: 10px; }
 
 nav ul li a { text-decoration: none; color: #fff; font-size: 0.95rem; padding: 8px 16px; }
 
-/* Botón hamburguesa - no se ve por defecto */
+/* Botón hamburguesa */
 .hamburguesa { display: none; background: none; border: none; cursor: pointer; padding: 10px; float: right; }
 
 .hamburguesa span { width: 25px; height: 3px; background-color: #fff; display: block; margin: 5px 0; }
 
 /* HERO */
-.hero { background-color: #1a2e4a; color: #fff; padding: 80px 40px; text-align: center; }
+.hero { background-image: linear-gradient(rgba(26,46,74,0.6), rgba(26,46,74,0.6)), url('../img/inicio/equipo.jpg'); background-size: cover; background-position: center; color: #fff; padding: 80px 40px; text-align: center; }
 
 .hero h2 { font-size: 2.8rem; margin-bottom: 16px; }
 
@@ -46,7 +45,7 @@ nav ul li a { text-decoration: none; color: #fff; font-size: 0.95rem; padding: 8
 
 .stat { display: inline-block; margin: 0 20px; text-align: center; }
 
-.stat-numero { font-size: 2.2rem; color: #00c2a8; }
+.stat-numero { font-size: 2.2rem; color: #ffffff; }
 
 .stat-texto { font-size: 0.9rem; color: #c5d5e8; }
 
@@ -77,20 +76,33 @@ nav ul li a { text-decoration: none; color: #fff; font-size: 0.95rem; padding: 8
 
 .seccion-azul .seccion-subtitulo { color: #c5d5e8; }
 
+/* Fondo específico para la sección "Cómo trabajamos" (no afecta las cajas blancas internas) */
+.seccion-azul.trabajamos-bg {
+    background: linear-gradient(rgba(26,46,74,0.6), rgba(26,46,74,0.6)), url('../img/cómotrabajamos/comotrabajamos.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
 .razones { text-align: center; }
 
-.razon { background-color: #2d5282; padding: 30px; width: 280px; text-align: center; display: inline-block; margin: 0 12px 24px; vertical-align: top; height: 180px; }
+.razon { background-color: #2d5282; padding: 16px; width: 280px; text-align: center; display: inline-block; margin: 0 12px 24px; vertical-align: top; min-height: 240px; box-sizing: border-box; }
 
 .razon h3 { color: #fff; font-size: 1.1rem; margin-bottom: 10px; text-align: center;}
 
 .razon p { color: #c5d5e8; font-size: 0.9rem; line-height: 1.6; text-align: center; }
 
+/* (regla `.razon .box-servicio` eliminada; se usa la regla genérica `.box-servicio`) */
 /* PAGE HERO */
 .page-hero { background-color: #1a2e4a; color: #fff; padding: 50px 40px; text-align: center; }
 
 .page-hero h2 { font-size: 2.2rem; margin-bottom: 10px; }
 
 .page-hero p { color: #c5d5e8; font-size: 1rem; max-width: 550px; margin: 0 auto; }
+
+/* Background banner for selected pages (services, nosotros, contacto, ubicacion) */
+.page-hero.banner-bg {
+    background: linear-gradient(rgba(26,46,74,0.6), rgba(26,46,74,0.6)), url('../img/banner/bannermenu.jpg') center/cover no-repeat;
+    color: #fff;
+}
 
 /* SERVICIOS */
 .servicios-lista { max-width: 1000px; margin: 0 auto; text-align: center; }
@@ -102,6 +114,10 @@ nav ul li a { text-decoration: none; color: #fff; font-size: 0.95rem; padding: 8
 .servicio h3 { font-size: 1.15rem; color: #1a2e4a; margin-bottom: 6px; }
 
 .servicio p { font-size: 0.95rem; color: #555; line-height: 1.6; }
+
+/* Caja de imagen para servicios: mantener proporción, centrar y ocupar espacio simétrico */
+.box-servicio { width: 100%; height: 140px; display: flex; align-items: center; justify-content: center; margin-top: 12px; overflow: hidden; }
+.box-servicio img { max-width: 100%; max-height: 100%; display: block; object-fit: contain; object-position: center; }
 
 /* PROCESO */
 .proceso { text-align: center; margin-top: 40px; }
