@@ -5,11 +5,12 @@
 Sitio web estático desarrollado como proyecto grupal para la materia de Desarrollo Web.
 
 ## Páginas
-
-- **Inicio** - Presentación general de la consultora
-- **Servicios** - Oferta de valor y proyectos
-- **Nosotros** - Equipo y misión
-- **Contacto** - Canales de contacto, formulario y ubicación
+ 
+- **Inicio** (`index.html`) — Presentación general de la consultora, banner principal con CTA y resumen de servicios.
+- **Servicios** (`paginas/servicios.html`) — Oferta de valor detallada y proyectos.
+- **Nosotros** (`paginas/nosotros.html`) — Equipo, misión, visión y valores.
+- **Contacto** (`paginas/contacto.html`) — Canales de contacto y formulario.
+- **Ubicación** (`paginas/ubicacion.html`) — Dirección y datos de cómo llegar.
 
 ## Estructura del proyecto
 ```
@@ -40,7 +41,6 @@ Proyecto-Bit-Consulting/
    git clone https://github.com/agusneme16/Proyecto-Bit-Consulting.git
    ```
 2. Abrir `index.html` en el navegador, o servirlo con una extensión tipo Live Server desde VS Code.
-
  
  ## Integrantes — Grupo 10
  
@@ -51,7 +51,6 @@ Proyecto-Bit-Consulting/
 | Purtscher, Erik Cristopher | [Ver sitio](https://erikcpurtscher.github.io/Proyecto1/) |
 | Enriquez, Leandro Ezequiel | [Ver sitio](https://enriquezleandrouade.github.io/DDW-Proyecto-1/) |
 | Montenegro, Ticiana Rocío | [Ver sitio](https://ticimontenegro.github.io/Proyecto1viernes/) | 
-
 
 ## Universidad Argentina de la Empresa 
 - **Materia:** Diseño y Desarrollo Web (10244)
